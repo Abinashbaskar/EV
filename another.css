@@ -1,0 +1,250 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+font-family: 'Poppins', sans-serif;
+background-color:#F8F8FF ;
+        }
+.links{
+	display: flex;
+	column-gap: 20px;
+}
+.links a{
+	text-decoration: none;
+	color:black;
+}
+.links a:hover{
+	text-decoration: underline;
+	color: #0E0F0D;
+}
+.navbar h1{
+    margin-left: 4px;
+}
+.menu-toggle{
+	display: none;
+}
+/*side-navbar*/
+ .side{
+      background-color:#F8F8FF;
+      width: 50%;
+      height: 100%;
+      position: fixed;
+      top:0;
+      left: -60%;
+      padding: 20px;
+      color:black;
+      transition: 0.5s;
+
+}
+.side-navbar-link{
+	margin-bottom:30px;
+}
+.side-links a{
+	text-decoration: none;
+	color: black;
+}
+.side-links a:hover{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+}
+.sidenav {
+    height: 158%;
+    width: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:white;
+    padding-top: 20px;
+    margin-top: 57px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    padding: 10px;
+    margin: 10px;
+}
+.scroll-container {
+    background-color:white;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-left: 14%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 8px;
+    margin-top: 3%;
+    }
+    
+    div.scroll-container img {
+    padding: 10px;
+    height: 150px;
+    width: 200px;
+    }
+    .images img{
+        border-radius: 20px;
+        height: 70px;
+        width: 250px;
+    }
+
+.sidenav a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+a {
+    outline: none;
+}
+.navbar-container {
+    margin: 8px;
+    margin-top: 15px;
+    padding-bottom:0 ;
+    background-color: whitesmoke;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.navbar-container ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.navbar-container ul li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.navbar-container ul li a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;	
+    transition: color 0.5s;
+}
+
+.navbar-container ul li .underline {
+    height: 5px;
+    background-color: transparent;
+    width: 0%;
+    transition: width 0.2s, background-color 0.5s;
+    margin: 0 auto;
+}
+
+.navbar-container ul li.active-link .underline {
+    width: 100%;
+    background-color: orange;
+}
+
+.navbar-container ul li:hover .underline {
+    background-color:orange;
+    width: 100%;
+}
+
+
+
+.navbar-container ul li:active a {
+    transition: none;
+    color: rgba(255,255,255,0.76);
+}
+
+.navbar-container ul li:active .underline {
+    transition: none;
+    background-color: rgba(255,255,255,0.76);
+}
+.battery{
+    margin-left: 48%;
+    padding: 10px;
+    background-color:ghostwhite;
+    border-radius: 10px;
+}
+.power{
+    margin-left: 5%;
+}
+.container{
+width:80%;
+margin-left: 5%;
+}
+.container p{
+color: black;
+}
+.battery{
+background-color: gainsboro;
+color: white;
+}
+.battery button{
+background-color: rgb(46, 199, 46);
+border: none;
+color: white;
+border-radius: 5px;
+padding-right: 5px;
+padding-left: 5px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+.power button{
+background-color: black;
+color: white;
+padding: 8px;
+border-radius: 5px;
+}
+.power2 button{
+display: inline;
+}
+
+
+
+@media screen and (max-width:600px){
+	.menu-toggle{
+	display:block;
+
+}
+.links{
+	display: none;
+}
+.sidenav{
+    display: none;
+}
+.scroll-container{
+    margin: 10px;
+}
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px; 
+  }
+
+.navbar-container ul{
+    margin: 0;
+}
+.box1{
+    flex-direction: column;
+}
+.battery{
+    margin: 0;
+    margin-top: 10px;
+}
+.power,.power2{
+    margin-top: 10px;
+}
+
+}
+
+
+
+
+
